@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(1, 1, 28);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        background-color: rgb(110, 110, 231);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 25px;
+        margin-left: 40px;
+        font-size: 1.2rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      nav ul li a:hover {
+        color: rgb(194, 78, 78);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      main hr {
+        border: 0;
+        background-color: rgb(102, 102, 194);
+        height: 2px;
+        margin: 20px 30px;
+        padding-bottom: 1px;
+        margin-bottom: 2px;
+        top: 2px;
+      }
+
+      .left {
+        font-size: 1.7rem;
+        margin-right: 200px;
+      }
+
+      .left:hover {
+        color: pink;
+        cursor: pointer;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 150px 0;
+        /* padding: 10px; */
+      }
+
+      .firstSection > div {
+        width: 40%;
+        /* background-color: brown; */
+      }
+
+      .leftSection {
+        /* background-color: red; */
+        padding: 0px;
+        margin-bottom: 50px;
+        font-size: 3rem;
+      }
+
+      .leftSection .btn {
+        padding: 25px;
+        background-color: #5a5add;
+        font-size: 20px;
+        color: white;
+        margin: 15px;
+        border: 4px solid white;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .leftSection .buttons {
+        padding: 60px 0px;
+      }
+
+      .leftSection .btn:hover {
+        right: 100px;
+        border-radius: 50px;
+        transform: rotate3d(90deg);
+      }
+
+      .rightSection img {
+        margin: -200px -90px;
+        width: 120%;
+        height: 40cqmax;
+      }
+
+      .purple {
+        color: rgb(132, 0, 255);
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(132, 0, 255);
+      }
+
+      .secondSection {
+        max-width: 87vw;
+        margin: auto;
+        padding: 50px;
+        height: 80vh;
+      }
+
+      .secondSection h1 {
+        font-size: 2rem;
+      }
+
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 40px -40px;
+        display: flex;
+      }
+
+      .secondSection .vertical {
+        height: 120px;
+        width: 2px;
+        background-color: white;
+        margin: 0 100px;
+      }
+
+      .img-top {
+        width: 100px;
+        position: relative;
+        top: 12px;
+        left: 50px;
+      }
+      .img-top1 {
+        width: 160px;
+        position: relative;
+        top: 12px;
+        left: 25px;
+      }
+      .img-top2 {
+        width: 160px;
+        position: relative;
+        top: 12px;
+        left: 25px;
+      }
+      .img-top3 {
+        width: 100px;
+        position: relative;
+        top: 28px;
+        left: 40px;
+      }
+      .img-top4 {
+        width: 153px;
+        position: relative;
+        top: 30px;
+        left: 18px;
+      }
+      .img-top5 {
+        width: 100px;
+        position: relative;
+        top: 35px;
+        left: 37px;
+      }
+      .img-top6 {
+        width: 100px;
+        position: relative;
+        top: 10px;
+        left: 25px;
+      }
+
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 160px;
+        font-size: 14px;
+      }
+      .vertical-title11 {
+        position: relative;
+        top: 77px;
+        width: 160px;
+        font-size: 14px;
+      }
+      .vertical-title1 {
+        position: relative;
+        top: 110px;
+        width: 160px;
+        font-size: 14px;
+      }
+      .vertical-title2 {
+        position: relative;
+        top: 107px;
+        width: 160px;
+        font-size: 14px;
+      }
+
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: grey;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      .vertical-desc3 {
+        position: relative;
+        top: 102px;
+        color: grey;
+        width: 150px;
+        font-size: 9px;
+      }
+      .vertical-desc4 {
+        position: relative;
+        top: 79px;
+        color: grey;
+        width: 150px;
+        font-size: 9px;
+      }
+      .vertical-desc5 {
+        position: relative;
+        top: 81px;
+        color: grey;
+        width: 150px;
+        font-size: 9px;
+      }
+      .vertical-desc6 {
+        position: relative;
+        top: 118px;
+        color: grey;
+        width: 150px;
+        font-size: 9px;
+      }
+      .vertical-desc7 {
+        position: relative;
+        top: 110px;
+        color: grey;
+        width: 150px;
+        font-size: 9px;
+      }
+
+      .footer {
+        background-color: #0f0f40;
+        /* color: black; */
+        /* height: 230px; */
+      }
+
+      .footer {
+        display: flex;
+        padding: 80px 0px;
+        font-size: 20px;
+        justify-content: space-evenly;
+      }
+
+      .footer ul {
+        list-style: none;
+        /* display: flex; */
+      }
+
+      .footer > div {
+        width: 223px;
+        top: 20px;
+      }
+
+      footer .footer-rights {
+        text-align: center;
+        color: grey;
+        padding: 12px 0;
+        font-size: 20px;
+      }
+      .anish {
+        width: 250px;
+        position: relative;
+        top: 15px;
+        left: -8px;
+      }
+
+      footer .footer-second ul li a {
+        text-decoration: none;
+        color: white;
+        line-height: 40px;
+      }
+
+      footer .footer-third ul li a {
+        text-decoration: none;
+        color: white;
+        line-height: 40px;
+        white-space: nowrap;
+      }
+
+      footer .footer-fourth ul li a {
+        text-decoration: none;
+        color: white;
+        line-height: 40px;
+        white-space: nowrap;
+      }
+      .contact {
+        padding: 0px;
+        margin: 0px;
+        top: 60px;
+        position: relative;
+        text-decoration: none;
+        white-space: nowrap;
+        color: #5a5add;
+      }
+
+      .contact a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Anish's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My Name is <span class="purple">Anish Garg</span>
+          <div>and I am a Passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button type="download" class="btn">
+              <a href="images/Anish Resume (2).pdf"></a>Download Your Resume
+            </button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="images/th.jpeg" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Skills</h1>
+        <div class="box">
+          <div class="vertical">
+            <img class="img-top" src="images/html.png" alt="" />
+            <div class="vertical-title">HTML Developer 2023-24</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              odio illo delectus ipsa accusamus, accusantium harum totam nihil
+              officiis voluptatibus ut, porro sed nobis assumenda. Facere esse
+              repellat totam nostrum!
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="img-top1" src="images/CSS.png" alt="" />
+            <div class="vertical-title">CSS Developer 2023-24</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              odio illo delectus ipsa accusamus, accusantium harum totam nihil
+              officiis voluptatibus ut, porro sed nobis assumenda. Facere esse
+              repellat totam nostrum!
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="img-top2" src="images/JavaScript.png" alt="" />
+            <div class="vertical-title">JS Developer 2023-24</div>
+            <div class="vertical-desc3">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              odio illo delectus ipsa accusamus, accusantium harum totam nihil
+              officiis voluptatibus ut, porro sed nobis assumenda. Facere esse
+              repellat totam nostrum!
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="img-top3" src="images/react.png" alt="" />
+            <div class="vertical-title">React Js Developer 2023-24</div>
+            <div class="vertical-desc4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              odio illo delectus ipsa accusamus, accusantium harum totam nihil
+              officiis voluptatibus ut, porro sed nobis assumenda. Facere esse
+              repellat totam nostrum!
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="img-top4" src="images/redux.png" alt="" />
+            <div class="vertical-title11">Redux Developer 2023-24</div>
+            <div class="vertical-desc5">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              odio illo delectus ipsa accusamus, accusantium harum totam nihil
+              officiis voluptatibus ut, porro sed nobis assumenda. Facere esse
+              repellat totam nostrum!
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="img-top5" src="images/tailwind-css.png" alt="" />
+            <div class="vertical-title1">Tailwind Css Developer 2023-24</div>
+            <div class="vertical-desc6">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              odio illo delectus ipsa accusamus, accusantium harum totam nihil
+              officiis voluptatibus ut, porro sed nobis assumenda. Facere esse
+              repellat totam nostrum!
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="img-top6" src="images/MySQL.png" alt="" />
+            <div class="vertical-title2">Mysql Developer 2023-24</div>
+            <div class="vertical-desc7">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+              odio illo delectus ipsa accusamus, accusantium harum totam nihil
+              officiis voluptatibus ut, porro sed nobis assumenda. Facere esse
+              repellat totam nostrum!
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Anish's Developer Portfolio</h3>
+          <img class="anish" src="images/anish.png" alt="" />
+
+          <a href="https://www.instagram.com/?hl=en" target="/"
+            ><img class="insta" src="images/instagram.png"
+          /></a>
+
+          <a href="https://www.facebook.com/anish.garg.33449" target="/"
+            ><img class="face" src="images/facebook.png"
+          /></a>
+          <a href="https://github.com/anishgarg11" target="/"
+            ><img class="face" src="images/GitHub.png"
+          /></a>
+          <style>
+            .insta {
+              width: 53px;
+              height: 48px;
+              position: relative;
+              top: 30px;
+              left: 0px;
+            }
+
+            .face {
+              width: 53px;
+              height: 48px;
+              position: relative;
+              top: 30px;
+              left: 0px;
+            }
+          </style>
+          <h5 class="contact">
+            Contact : <a href="">+91 9599277450 </a><br />
+            Email :
+            <a href="https://mail.google.com/mail/u/0/#inbox"
+              >garganish55@gmail.com</a
+            >
+          </h5>
+        </div>
+        <div class="footer-second">
+          <ul class="second">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-third">
+          <ul>
+            <li><a href="">Website Policies</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">Web Information Manager</a></li>
+          </ul>
+        </div>
+        <div class="footer-fourth">
+          <ul>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Accessibility Statement</a></li>
+            <li><a href="">Website Design</a></li>
+            <li><a href="">Web Hosting</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; www.anishportfolio.com | All Rights are reserved.
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Web Designer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
